@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/Controller/Inicio.master.cs" Inherits="View_Inicio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            height: 15%;
+        }
+        .auto-style10 {
+            width: 10%;
+            text-align: center;
+        }
+        .auto-style17 {
+            text-align: right;
+            height: 30%;
+        }
+        .auto-style18 {
+            height: 37px;
+            text-align: center;
+        }
+        .auto-style20 {
+            height: 25px;
+        }
+        .auto-style25 {
+            height: 15%;
+            width: 5%;
+        }
+        .auto-style26 {
+            height: 37px;
+            text-align: center;
+            width: 5%;
+        }
+        .auto-style30 {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style10" rowspan="3">
+                    <asp:Image ID="I_LogoAgroya" runat="server" ImageUrl="~/Imagenes/LogoAgroya.png" Width="30%" />
+                </td>
+                <td class="auto-style3"></td>
+                <td class="auto-style25">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style18">
+                    <asp:Menu ID="Menu1" runat="server" StaticSubMenuIndent="16px" Orientation="Horizontal" Width="90%" Font-Bold="True" Font-Italic="False" Font-Names="Sitka Small" Font-Overline="False" Font-Size="X-Large" Font-Strikeout="False" Font-Underline="False" ForeColor="Black" RenderingMode="Table" Height="34px">
+                        <Items>
+                            <asp:MenuItem Text="INICIO" Value="INICIO" NavigateUrl="~/View/Index.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="SOBRE AGROYA" Value="SOBRE AGROYA"></asp:MenuItem>
+                            <asp:MenuItem Text="CATALOGO" Value="CATALOGO" NavigateUrl="~/View/Catalogo.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="PRODUCTORES" Value="PRODUCTORES"></asp:MenuItem>
+                            <asp:MenuItem Text="CONTACTO" Value="CONTACTO"></asp:MenuItem>
+                            <asp:MenuItem Text="P.Q.R.S" Value="P.Q.R.S"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="auto-style26">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style17" colspan="2">
+                    <asp:Button ID="B_InicioSesion" runat="server" BackColor="#00773F" Font-Bold="True" Font-Names="Sitka Small" Font-Size="Medium" ForeColor="White" Height="46px" OnClick="B_InicioSesion_Click" Text="INICIAR SESIÓN" Width="8%" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style20" colspan="3"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="auto-style30"></td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            </table>
+    </div>
+    </form>
+    </body>
+</html>
