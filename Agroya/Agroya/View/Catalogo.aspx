@@ -27,7 +27,7 @@
         <tr>
             <td class="auto-style31">&nbsp;</td>
             <td class="auto-style34">
-                <asp:Label ID="L_Titulo" runat="server" Font-Bold="True" Font-Names="Sitka Small" Font-Size="X-Large" Text="NUESTROS PRODUCTOS 2"></asp:Label>
+                <asp:Label ID="L_Titulo" runat="server" Font-Bold="True" Font-Names="Sitka Small" Font-Size="X-Large" Text="NUESTROS PRODUCTOS"></asp:Label>
             </td>
             <td class="auto-style33">&nbsp;</td>
         </tr>
